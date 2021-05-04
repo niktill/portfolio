@@ -1,28 +1,39 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Banner />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import Banner from './components/Banner.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    Banner,
   },
 };
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.github-color {
+  background-color: #24292e !important;
+}
+.linkedin-color {
+  background-color: #0e76a8 !important;
+}
+.facebook-color {
+  background-color: #4267b2 !important;
+}
+.gmail-color {
+  background-color: #d44638 !important;
 }
 </style>
