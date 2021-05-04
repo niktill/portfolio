@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <Banner />
+    <Experience />
   </div>
 </template>
 
 <script>
 import Banner from './components/Banner.vue';
+import Experience from './components/Experience.vue';
 
 export default {
   name: 'App',
   components: {
     Banner,
+    Experience,
   },
 };
 </script>
