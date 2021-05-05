@@ -1,17 +1,20 @@
 <template>
   <div id="app">
+    <Nav />
     <Banner />
     <Experience />
   </div>
 </template>
 
 <script>
+import Nav from './components/Nav.vue';
 import Banner from './components/Banner.vue';
 import Experience from './components/Experience.vue';
 
 export default {
   name: 'App',
   components: {
+    Nav,
     Banner,
     Experience,
   },
@@ -25,7 +28,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 .github-color {
   background-color: #24292e !important;
