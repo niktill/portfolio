@@ -4,13 +4,14 @@
       <b-card title="Front-end" border-variant="">
         <b-card-img src="../assets/web-design.svg" alt="frontend logo" />
         <b-card-text>
-          From ideas to stuff on screen, I have developed the front-end for various web applications
-          and pages. I have experience with the following front-end languages and frameworks:
+          From ideas to stuff on screen, I have developed the front-end for various web
+          applications. I have experience with the following front-end languages and frameworks:
         </b-card-text>
         <hr />
         <ul>
           <li>HTML</li>
           <li>CSS</li>
+          <li>Sass</li>
           <li>Bootstrap</li>
           <li>Semantic UI</li>
           <li>JavaScript</li>
@@ -66,6 +67,8 @@
           <li>SendGrid</li>
           <li>Heroku</li>
           <li>Firebase</li>
+          <li>npm</li>
+          <li>Yarn</li>
           <li>Adobe Experience Manager (AEM)</li>
         </ul>
       </b-card>

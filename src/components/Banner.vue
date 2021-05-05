@@ -1,5 +1,6 @@
 <template>
-  <b-jumbotron header="Nikolas Till" lead="Full Stack Developer" id="banner">
+  <b-jumbotron header="Nikolas Till" lead="Full Stack Developer" id="banner" fluid>
+    <b-img id="profile-photo" src="../assets/profile-photo.jpg" rounded="circle" width="250" />
     <div class="social-buttons">
       <b-button
         class="github-color"
@@ -49,12 +50,12 @@
     <hr class="my-4" />
 
     <p id="bio">
-      Hello 🙂! I am a new graduate from University of Toronto with a double major in Computer
+      Hello 🙂! I am a new graduate from the University of Toronto with a double major in Computer
       Science and Cognitive Science. As someone who has been developing software for over 5 years,
-      web development is a field I have grown to love. I have professional experience developing web
-      applications and multiple full stack projects I have developed and deployed as personal
-      projects or through my studies. I am excited to explore new opportunuties to ultilize and
-      further improve my skills as a human and software developer.
+      web development is a field I have grown to love. I have professional experience with web
+      development and have multiple full stack projects that I have developed and deployed as
+      personal projects or throughout my studies. I am excited to explore new opportunuties to
+      ultilize and further improve my skills as a human and software developer.
     </p>
   </b-jumbotron>
 </template>
@@ -67,13 +68,18 @@ export default {
 
 <style>
 #banner {
-  background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+  background-image: linear-gradient(120deg, #a9d6ff 0%, #ceedfc 100%);
   margin-bottom: 0;
+  padding-top: 20px;
+}
+#profile-photo {
+  margin-bottom: 10px;
 }
 .social-buttons > a {
   margin: 5px 5px;
 }
 #bio {
-  margin: 0px 30px;
+  margin: auto;
+  width: 750px;
 }
 </style>
