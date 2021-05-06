@@ -48,7 +48,7 @@ body {
   text-align: center;
   color: #2c3e50;
   margin-top: 0px;
-  animation-duration: 2s; /* don't forget to set a duration! */
+  animation-duration: 2s;
 }
 .github-color {
   background-color: #24282c !important;
