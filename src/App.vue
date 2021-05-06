@@ -1,8 +1,15 @@
 <template>
-  <div id="app">
+  <div id="app" class="animate__animated animate__fadeInUp">
     <Banner />
     <Experience />
     <Featured />
+    <Work />
+    <div>
+      Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a>,
+      <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a>, and
+      <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
   </div>
 </template>
 
@@ -11,6 +18,7 @@
 import Banner from './components/Banner.vue';
 import Experience from './components/Experience.vue';
 import Featured from './components/Featured.vue';
+import Work from './components/Work.vue';
 
 export default {
   name: 'App',
@@ -19,11 +27,20 @@ export default {
     Banner,
     Experience,
     Featured,
+    Work,
+  },
+  mounted: () => {
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    };
   },
 };
 </script>
 
 <style>
+body {
+  background-image: linear-gradient(120deg, #a9d6ff 0%, #ceedfc 100%);
+}
 #app {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

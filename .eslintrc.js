@@ -14,5 +14,6 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'vue/no-shared-component-data': 'warn',
     indent: 'off',
+    'comma-dangle': 'off',
   },
 };

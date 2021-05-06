@@ -4,14 +4,17 @@
     img-top
     border-variant="light"
     class="mb-3 featured-project-card"
+    v-show="isVisible"
+    v-bind:class="{ 'animate__animated animate__fadeInUp': isVisible }"
   >
     <b-card-title>{{ title }}</b-card-title>
     <b-card-text>{{ description }}</b-card-text>
     <template #footer>
-      <b-button variant="outline-primary" pill link :href="link" target="_blank"
-        >Visit Website</b-button
+      <b-button variant="outline-primary" pill link size="sm" :href="link" target="_blank"
+        ><b-icon icon="globe" aria-hidden="true"></b-icon> Visit Website</b-button
       >
       <b-button
+        size="sm"
         variant="outline-light"
         class="github-color"
         pill
@@ -28,7 +31,7 @@
 <script>
 export default {
   name: 'FeaturedProject',
-  props: ['title', 'img', 'imgAlt', 'description', 'link', 'githubLink'],
+  props: ['title', 'img', 'imgAlt', 'description', 'link', 'githubLink', 'isVisible'],
 };
 </script>
 
@@ -41,5 +44,6 @@ img {
 button,
 a {
   margin-right: 10px;
+  margin-top: 5px;
 }
 </style>
