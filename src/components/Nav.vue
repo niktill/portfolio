@@ -9,7 +9,7 @@
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
         <b-button pill variant="outline-primary" href="mailto:niktill123@gmail.com"
-          >Email Me!</b-button
+          >Email Me</b-button
         >
       </b-navbar-nav>
     </b-collapse>

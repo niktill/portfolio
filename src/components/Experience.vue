@@ -2,7 +2,7 @@
   <div>
     <b-card-group id="exp-cards">
       <b-card title="Front-end" border-variant="">
-        <b-card-img src="../assets/web-design.svg" alt="frontend logo" />
+        <b-card-img src="../assets/images/web-design.svg" alt="frontend logo" />
         <b-card-text>
           From ideas to stuff on screen, I have developed the front-end for various web
           applications. I have experience with the following front-end languages and frameworks:
@@ -29,7 +29,7 @@
       </b-card>
 
       <b-card title="Back-end">
-        <b-card-img src="../assets/backend.svg" alt="frontend logo" />
+        <b-card-img src="../assets/images/backend.svg" alt="frontend logo" />
         <b-card-text>
           From command line to servers and databases, I have developed algorithms and the back-end
           for web and desktop applications. I have experience with the following back-end languages
@@ -48,7 +48,7 @@
       </b-card>
 
       <b-card title="Tools & Testing">
-        <b-card-img src="../assets/settings.svg" alt="frontend logo" />
+        <b-card-img src="../assets/images/settings.svg" alt="frontend logo" />
         <b-card-text>
           From version control to testing and deploying software, I have experience with a vast
           array of developer tools, all of which are crucial in the workflow of deploying and

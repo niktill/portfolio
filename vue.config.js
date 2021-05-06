@@ -11,7 +11,7 @@ module.exports = {
                     transformAssetUrls: {
                         video: ['src', 'poster'],
                         source: 'src',
-                        img: 'src',
+                        img: ['src', 'v-src'],
                         image: 'xlink:href',
                         'b-avatar': 'src',
                         'b-img': 'src',
