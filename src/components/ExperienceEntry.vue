@@ -7,7 +7,7 @@
       callback: visibilityChanged,
       once: true,
       intersection: {
-        rootMargin: '10px',
+        rootMargin: '20px',
       },
     }"
     v-bind:class="{ 'animate__animated animate__fadeInUp': isVisible }"

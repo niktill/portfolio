@@ -106,6 +106,7 @@ a.gmail-color:hover {
 }
 #credits {
   margin-top: 20px;
+  padding: 10px;
   background-color: white;
 }
 </style>

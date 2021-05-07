@@ -35,7 +35,7 @@
         href="mailto:niktill123@gmail.com"
         target="_blank"
       >
-        <b-icon icon="mailbox" aria-hidden="true"></b-icon>
+        <b-icon icon="envelope" aria-hidden="true"></b-icon>
         Email
       </b-button>
       <b-button
