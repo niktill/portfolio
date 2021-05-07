@@ -85,6 +85,6 @@ export default {
 }
 #bio {
   margin: auto;
-  width: 750px;
+  max-width: 750px;
 }
 </style>

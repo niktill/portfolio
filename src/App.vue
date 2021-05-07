@@ -1,9 +1,9 @@
 <template>
   <div id="app" class="animate__animated animate__fadeIn">
     <Banner />
-    <Experience />
+    <Knowledge />
     <Featured />
-    <Work />
+    <Experience />
     <div>
       Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a>,
       <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a>, and
@@ -16,18 +16,18 @@
 <script>
 // import Nav from './components/Nav.vue';
 import Banner from './components/Banner.vue';
-import Experience from './components/Experience.vue';
+import Knowledge from './components/Knowledge.vue';
 import Featured from './components/Featured.vue';
-import Work from './components/Work.vue';
+import Experience from './components/Experience.vue';
 
 export default {
   name: 'App',
   components: {
     // Nav,
     Banner,
-    Experience,
+    Knowledge,
     Featured,
-    Work,
+    Experience,
   },
   mounted: () => {
     window.onbeforeunload = function () {

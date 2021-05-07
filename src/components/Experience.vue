@@ -1,60 +1,60 @@
 <template>
   <div>
-    <b-card-group id="exp-cards">
+    <hr />
+    <div id="experience-header">
+      <h1>Experience</h1>
+      <p>Click cards for details</p>
+    </div>
+    <div id="experiences">
       <ExperienceEntry
         v-for="experience in experiences"
         :key="experience.title"
         v-bind:title="experience.title"
+        v-bind:date="experience.date"
         v-bind:img="experience.img"
         v-bind:imgAlt="experience.imgAlt"
         v-bind:description="experience.description"
-        v-bind:experienceList="experience.experienceList"
       />
-    </b-card-group>
+      <div id="vl"></div>
+    </div>
   </div>
 </template>
 
 <script>
-import $ from 'jquery';
 import experiences from '../assets/json/experience';
 import ExperienceEntry from './ExperienceEntry.vue';
 
 export default {
   name: 'Experience',
+  components: { ExperienceEntry },
   data: () => ({
     experiences: experiences.data,
   }),
-  components: {
-    ExperienceEntry,
-  },
-  mounted: () => {
-    $(window).on('load resize', () => {
-      $('.experience-text').height('auto');
-      const heights = [...document.querySelectorAll('.experience-text')].map(
-        (el) => el.offsetHeight
-      );
-      const maxHeight = Math.max(...heights);
-      $('.experience-text').height(maxHeight);
-    });
-  },
 };
 </script>
 
 <style>
-#exp-cards .card-title {
-  font-weight: 800;
+#experiences {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  flex: 1 1 0;
+  align-items: stretch;
 }
-#exp-cards img {
-  width: 120px !important;
-  margin: 20px 10px;
-  filter: invert(18%) sepia(83%) saturate(2339%) hue-rotate(210deg) brightness(106%) contrast(103%);
+#experience-header {
+  margin: 50px auto 50px auto;
 }
-ul {
-  list-style: none;
-  padding: 0;
-}
-.dotted-line {
-  padding-bottom: 1px;
-  border-bottom: grey dashed 2px;
+#vl {
+  border-left: 6px solid white;
+  border-radius: 100px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+  z-index: -1;
 }
 </style>
+60
