@@ -6,6 +6,9 @@
     v-observe-visibility="{
       callback: visibilityChanged,
       once: true,
+      intersection: {
+        rootMargin: '10px',
+      },
     }"
     v-bind:class="{ 'animate__animated animate__fadeInUp': isVisible }"
   >

@@ -1,11 +1,6 @@
 <template>
   <b-jumbotron header="Nikolas Till" lead="Full Stack Developer" id="banner" fluid>
-    <b-img
-      id="profile-photo"
-      src="../assets/images/profile-photo.jpg"
-      rounded="circle"
-      width="250"
-    />
+    <b-img id="profile-photo" src="../assets/images/profile-photo.jpg" rounded="circle" />
     <div class="social-buttons">
       <b-button
         class="github-color"
@@ -79,6 +74,7 @@ export default {
 }
 #profile-photo {
   margin-bottom: 10px;
+  max-width: 250px;
 }
 .social-buttons > a {
   margin: 5px 5px;

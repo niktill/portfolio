@@ -1,11 +1,10 @@
 <template>
-  <div>
-    <hr />
+  <div id="experiences">
     <div id="experience-header">
       <h1>Experience</h1>
       <p>Click cards for details</p>
     </div>
-    <div id="experiences">
+    <div id="experiences-list">
       <ExperienceEntry
         v-for="experience in experiences"
         :key="experience.title"
@@ -35,6 +34,9 @@ export default {
 
 <style>
 #experiences {
+  margin-top: 100px;
+}
+#experiences-list {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -42,6 +44,8 @@ export default {
   margin: auto;
   flex: 1 1 0;
   align-items: stretch;
+  padding: 10px;
+  padding-top: 0;
 }
 #experience-header {
   margin: 50px auto 50px auto;

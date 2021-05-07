@@ -3,6 +3,7 @@
     <Banner />
     <Knowledge />
     <Featured />
+    <hr />
     <Experience />
     <div>
       Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a>,

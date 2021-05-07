@@ -58,7 +58,8 @@ export default {
 
 <style scoped>
 #featured {
-  padding: 50px;
+  padding: 10px;
+  margin-top: 100px;
   margin-bottom: 30px;
 }
 #featured-projects-group {
