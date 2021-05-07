@@ -40,7 +40,7 @@
       </b-button>
       <b-button
         aria-label="resume link"
-        href="https://drive.google.com/file/d/1Dm5OQffkMxry076F0MIG-pazKOLZRa6g/view?usp=sharing"
+        href="https://drive.google.com/file/d/1CL9Kd9w6ZqOCPj9H-h1IDYI6amQ-dKtZ/view?usp=sharing"
         target="_blank"
       >
         <b-icon icon="file-earmark" aria-hidden="true"></b-icon>
