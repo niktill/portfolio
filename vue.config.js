@@ -26,4 +26,7 @@ module.exports = {
                 return newOptions;
             });
     },
+    publicPath: process.env.NODE_ENV === 'production'
+        ? '/portfolio/'
+        : '/'
 };
