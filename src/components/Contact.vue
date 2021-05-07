@@ -1,6 +1,6 @@
 <template>
   <div id="contact">
-    <h2>Want to say Hello?</h2>
+    <h2>Want to say hello?</h2>
     <b-button id="contact-email-button" pill variant="primary" href="mailto:niktill123@gmail.com">
       <b-icon icon="envelope"></b-icon>
       Send me an email</b-button
