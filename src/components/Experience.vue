@@ -15,6 +15,7 @@
         v-bind:description="experience.description"
       />
       <div id="vl"></div>
+      <div id="now"><small>Now</small></div>
     </div>
   </div>
 </template>
@@ -34,7 +35,7 @@ export default {
 
 <style>
 #experiences {
-  margin-top: 100px;
+  margin-top: 75px;
 }
 #experiences-list {
   position: relative;
@@ -46,6 +47,7 @@ export default {
   align-items: stretch;
   padding: 10px;
   padding-top: 0;
+  padding-bottom: 0;
 }
 #experience-header {
   margin: 50px auto 50px auto;
@@ -60,5 +62,16 @@ export default {
   top: 0;
   z-index: -1;
 }
+#now {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  margin: auto;
+  width: 60px;
+  padding: 5px;
+  height: 60px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
 </style>
-60

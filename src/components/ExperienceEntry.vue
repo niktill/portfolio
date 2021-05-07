@@ -2,7 +2,7 @@
   <b-card
     no-body
     class="experience-card"
-    border-variant="light"
+    border-variant="primary"
     v-observe-visibility="{
       callback: visibilityChanged,
       once: true,

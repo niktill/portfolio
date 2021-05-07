@@ -59,13 +59,15 @@ export default {
 <style scoped>
 #featured {
   padding: 10px;
-  margin-top: 100px;
+  margin-top: 75px;
   margin-bottom: 30px;
 }
 #featured-projects-group {
   margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
 }
 h1 {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 </style>

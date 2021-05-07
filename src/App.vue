@@ -5,10 +5,22 @@
     <Featured />
     <hr />
     <Experience />
-    <div>
-      Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a>,
-      <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a>, and
-      <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from
+    <hr />
+    <About />
+    <Contact />
+    <b-button id="back-to-top" pill v-on:click="backToTop">
+      <b-icon icon="chevron-double-up"></b-icon>
+      Back to Top</b-button
+    >
+    <div id="credits">
+      Powered by <a href="https://bootstrap-vue.org/" target="_blank">BootstrapVue</a>
+      <br />
+      Icons made by
+      <a href="https://www.freepik.com" title="Freepik">Freepik</a>,
+      <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a>,
+      <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect"
+        >Pixel perfect</a
+      >, and <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from
       <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
     </div>
   </div>
@@ -20,6 +32,8 @@ import Banner from './components/Banner.vue';
 import Knowledge from './components/Knowledge.vue';
 import Featured from './components/Featured.vue';
 import Experience from './components/Experience.vue';
+import About from './components/About.vue';
+import Contact from './components/Contact.vue';
 
 export default {
   name: 'App',
@@ -29,9 +43,16 @@ export default {
     Knowledge,
     Featured,
     Experience,
+    About,
+    Contact,
+  },
+  methods: {
+    backToTop: () => {
+      window.scrollTo(0, 0);
+    },
   },
   mounted: () => {
-    window.onbeforeunload = function () {
+    window.onbeforeunload = () => {
       window.scrollTo(0, 0);
     };
   },
@@ -79,5 +100,12 @@ a.facebook-color:hover {
 button.gmail-color:hover,
 a.gmail-color:hover {
   background-color: #bb3024 !important;
+}
+#back-to-top {
+  margin-top: 50px;
+}
+#credits {
+  margin-top: 20px;
+  background-color: white;
 }
 </style>
