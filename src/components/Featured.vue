@@ -19,6 +19,7 @@
         v-bind:description="project.description"
         v-bind:link="project.link"
         v-bind:githubLink="project.githubLink"
+        v-bind:tools="project.tools"
         v-bind:isVisible="isVisible"
       />
     </b-card-group>

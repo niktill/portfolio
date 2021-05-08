@@ -9,6 +9,11 @@
   >
     <b-card-title>{{ title }}</b-card-title>
     <b-card-text>{{ description }}</b-card-text>
+    <div class="tools">
+      <b-badge class="tool-badge" pill variant="light" v-for="tool in tools" :key="tool">{{
+        tool
+      }}</b-badge>
+    </div>
     <template #footer>
       <b-button variant="outline-primary" pill link size="sm" :href="link" target="_blank"
         ><b-icon icon="globe" aria-hidden="true"></b-icon> Visit Website</b-button
@@ -31,7 +36,7 @@
 <script>
 export default {
   name: 'FeaturedProject',
-  props: ['title', 'img', 'imgAlt', 'description', 'link', 'githubLink', 'isVisible'],
+  props: ['title', 'img', 'imgAlt', 'description', 'link', 'githubLink', 'tools', 'isVisible'],
 };
 </script>
 
@@ -45,5 +50,18 @@ button,
 a {
   margin-right: 10px;
   margin-top: 5px;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+.tools {
+  margin-top: auto;
+  padding-top: 10px;
+}
+.tool-badge {
+  margin: 2px;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 </style>
