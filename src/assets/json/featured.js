@@ -24,7 +24,7 @@ export default
         title: 'Natural20',
         img: 'swords.png',
         imgAlt: 'swords',
-        description: 'Web application battle tracker to be used for D&D or other table-top RPGs. Allows users to track factors such as initiative, turn order, health, armour class for battle members and automatically fill statistics for D&D 5e monster!',
+        description: 'Web application battle tracker to be used for D&D or other table-top RPGs. Allows users to track factors such as initiative, turn order, health, armour class for battle members and automatically fill statistics for D&D 5e monsters!',
         link: 'https://natural20battletracker.web.app/',
         githubLink: 'https://github.com/niktill/natural20',
         tools: ['React', 'Firebase']
