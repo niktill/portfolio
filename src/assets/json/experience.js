@@ -6,7 +6,7 @@ export default
                 date: 'Sept 2016',
                 img: 'Utoronto.png',
                 imgAlt: 'University of Toronto logo',
-                description: '📖 Began my studies undergraduate at University of Toronto (St. George Campus).',
+                description: '📖 Began my undergraduate studies at University of Toronto (St. George Campus).',
             },
             {
                 title: 'Boxcar Social - Barista/Bartender',
