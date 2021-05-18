@@ -17,7 +17,7 @@ export default
         description: 'Web application that manages and tracks spells and spell slots for D&D characters and provides access to 5e spell statistics.',
         link: 'https://enchant-spellbook.herokuapp.com/',
         githubLink: 'https://github.com/niktill/enchant',
-        tools: ['React', 'React-Redux', 'Node.js', 'MongoDB', 'Mongoose', 'Express', 'Heroku']
+        tools: ['React', 'React-Redux', 'Node.js', 'Express', 'MongoDB', 'Mongoose', 'Redis', 'Heroku']
 
       },
       {
