@@ -41,7 +41,7 @@ export default {
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 500px;
+  max-width: 550px;
   margin: auto;
   flex: 1 1 0;
   align-items: stretch;

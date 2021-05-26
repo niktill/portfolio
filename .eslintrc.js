@@ -15,5 +15,7 @@ module.exports = {
     'vue/no-shared-component-data': 'warn',
     indent: 'off',
     'comma-dangle': 'off',
+    'object-shorthand': 'off',
+    'func-names': 'warn',
   },
 };
