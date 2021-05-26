@@ -4,7 +4,11 @@
       <h1>Experience</h1>
       <p>Click cards for details</p>
     </div>
+
     <div id="experiences-list">
+      <div id="baby">
+        <b-img id="baby-img" src="../assets/images/baby-boy.svg" rounded="circle" />
+      </div>
       <ExperienceEntry
         v-for="experience in experiences"
         :key="experience.title"
@@ -15,7 +19,7 @@
         v-bind:description="experience.description"
       />
       <div id="vl"></div>
-      <div id="now"><small>Now</small></div>
+      <div id="now">Now</div>
     </div>
   </div>
 </template>
@@ -36,6 +40,7 @@ export default {
 <style>
 #experiences {
   margin-top: 75px;
+  margin-bottom: 30px;
 }
 #experiences-list {
   position: relative;
@@ -52,6 +57,26 @@ export default {
 #experience-header {
   margin: 50px auto 50px auto;
 }
+#baby,
+#now {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 50%;
+  margin: auto;
+  width: 100px;
+  padding: 5px;
+  height: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+#baby {
+  margin-bottom: 100px;
+}
+#baby-img {
+  height: 75px;
+  width: 75px;
+}
 #vl {
   border-left: 6px solid white;
   border-radius: 100px;
@@ -61,17 +86,5 @@ export default {
   margin-left: -3px;
   top: 0;
   z-index: -1;
-}
-#now {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  border-radius: 50%;
-  margin: auto;
-  width: 60px;
-  padding: 5px;
-  height: 60px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
 }
 </style>

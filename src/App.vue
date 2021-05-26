@@ -20,7 +20,8 @@
       <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a>,
       <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect"
         >Pixel perfect</a
-      >, and <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from
+      >, <a href="https://www.freepik.com" title="Freepik">Freepik</a>, and
+      <a href="https://www.flaticon.com/authors/becris" title="Becris">Becris</a> from
       <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
     </div>
   </div>
