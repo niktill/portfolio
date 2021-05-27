@@ -3,6 +3,7 @@
     no-body
     class="experience-card"
     border-variant="primary"
+    v-b-toggle:[title]
     v-observe-visibility="{
       callback: visibilityChanged,
       once: true,
@@ -12,7 +13,7 @@
     }"
     v-bind:class="{ 'animate__animated animate__fadeInUp': isVisible }"
   >
-    <b-card-header v-b-toggle:[title] class="experience-card-header" v-on:click="openTab">
+    <b-card-header class="experience-card-header" v-on:click="openTab">
       <img class="header-img" :src="require(`../assets/images/${img}`)" :alt="imgAlt" />
       <div>
         <p>{{ title }}</p>
