@@ -1,9 +1,12 @@
 <template>
-  <b-card :title="title">
-    <b-card-img :src="require(`../assets/images/${img}`)" :alt="imgAlt" />
-    <b-card-text class="experience-text">
-      {{ description }}
-    </b-card-text>
+  <b-card>
+    <div class="knowledge-card-top">
+      <b-card-title>{{ title }}</b-card-title>
+      <b-card-img :src="require(`../assets/images/${img}`)" :alt="imgAlt" />
+      <b-card-text class="experience-text">
+        {{ description }}
+      </b-card-text>
+    </div>
     <hr />
     <ul>
       <li v-for="item in experienceList" :key="item">

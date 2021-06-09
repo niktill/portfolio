@@ -29,12 +29,15 @@ export default {
   },
   mounted: () => {
     $(window).on('load resize', () => {
-      $('.experience-text').height('auto');
-      const heights = [...document.querySelectorAll('.experience-text')].map(
-        (el) => el.offsetHeight
-      );
-      const maxHeight = Math.max(...heights);
-      $('.experience-text').height(maxHeight);
+      const knowledgeCardTopClass = '.knowledge-card-top';
+      $(knowledgeCardTopClass).height('auto');
+      if ($(window).width() >= 576) {
+        const heights = [...document.querySelectorAll(knowledgeCardTopClass)].map(
+          (el) => el.offsetHeight
+        );
+        const maxHeight = Math.max(...heights);
+        $(knowledgeCardTopClass).height(maxHeight);
+      }
     });
   },
 };
